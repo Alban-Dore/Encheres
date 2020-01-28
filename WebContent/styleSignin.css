@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("Login.css");
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.articlelist{
+	display:flex;
+	flex-direction: rows;
+	flex-wrap: wrap;
+}
+
+.article{
+	padding: 5%;
+}
+
+form{
+	margin: 20px;
+}
+header{
+	border : 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: rgb(200,200,213);
+	width:100%;
+}
+
+body{
+      background-color: rgb(200,200,213);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+h1{
+      font-family: 'Amatic SC', cursive;
+      text-align: center;
+}
+/*Formulaire*/
+.formulaire{
+      box-shadow: 0 2px 5px 0 black;
+      border-radius: 10px;
+      border: 1px solid #FFF;
+      width:55%;
+      background-color: rgb(200,200,213);
+      padding:10px;
+}
+.champs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin : 20px;
+}
+.label_gauche{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around;
+      padding:10px;
+
+}
+.gauche{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+}
+.label_droite{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding:10px;
+}
+.droite{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+}
+
+
+.buttons{
+      display: flex;
+      justify-content:flex-end;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+}
+.input{
+      margin:5px;
+      border-radius: 5px;
+      background-color: #DDD;
+}
+.error{
+	text-align: center;
+	color: red;
+	padding: 20px;
+}
+.message{
+	text-align: center;
+	color: green;
+	padding: 20px;
+}
+.boutonOk {
+	border-radius:12px 0 12px 0;
+	background: #478bf9;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+	margin:10px;
+}
+.boutonCancel {
+	border-radius:12px 0 12px 0;
+	background: #d34836;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:6px 0 6px 0;
+	margin:10px;	
+}
+a{
+    margin-right:10px;
+    text-decoration: none;
+}
+a:hover{
+	color: black;	
+}
+
+@media only screen and (max-width:800px) {
+	body{
+		background-color: red;
+	}
+}
